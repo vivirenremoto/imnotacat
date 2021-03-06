@@ -88,6 +88,20 @@
             justify-content: center;
             margin-top: -20px;
         }
+
+
+        .credits {
+            font-size: 30px;
+            color: black;
+            text-decoration: none;
+        }
+
+
+        @media screen and (max-width: 480px) {
+            .credits {
+                font-size: 23px;
+            }
+        }
     </style>
 
 
@@ -131,11 +145,11 @@
 
     </div>
 
-    <a href="https://twitter.com/BeatrizRebolloM/status/1359832756230971394" target="_blank"
-        style="position:fixed;left:10px;font-size:30px;color:black;text-decoration:none;">by Beatriz Rebollo</a>
+    <a class="credits" href="https://twitter.com/BeatrizRebolloM/status/1359832756230971394" target="_blank"
+        style="position:fixed;left:10px;">Beatriz Rebollo</a>
 
-    <a href="https://twitter.com/vivirenremoto/" target="_blank"
-        style="position:fixed;right:10px;font-size:30px;color:black;text-decoration:none;">by vivirenremoto</a>
+    <a class="credits" href="https://twitter.com/vivirenremoto/" target="_blank"
+        style="position:fixed;right:10px;">vivirenremoto</a>
 
 
     <audio id="music" loop>
@@ -189,8 +203,21 @@
         });
 
         function moveEyes(evt) {
-            const x = -(window.innerWidth / 2 - evt.pageX) / 450;
-            const y = -(window.innerHeight / 2 - evt.pageY) / 450;
+            var currentX;
+            var currentY;
+
+            if (evt.originalEvent) {
+                currentX = evt.originalEvent.touches ? evt.originalEvent.touches[0].pageX : evt.pageX;
+                currentY = evt.originalEvent.touches ? evt.originalEvent.touches[0].pageY : evt.pageY;
+            } else {
+                currentX = evt.pageX;
+                currentY = evt.pageY;
+            }
+
+
+
+            const x = -(window.innerWidth / 2 - currentX) / 400;
+            const y = -(window.innerHeight / 2 - currentY) / 400;
             eye1.style.transform = `translateY(${y}px) translateX(${x}px)`;
             eye2.style.transform = `translateY(${y}px) translateX(${x}px)`;
 
