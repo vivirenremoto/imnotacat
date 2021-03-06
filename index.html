@@ -61,6 +61,7 @@
         BODY {
             touch-action: pan-x pan-y;
             background: #f5e9cb url('static/bg.png');
+            background-position: left top;
         }
 
 
@@ -103,7 +104,7 @@
     </style>
 
 
-    <p style="position:fixed;right:0;bottom:0">v2</p>
+    <p style="position:fixed;right:20px;bottom:0">v1.1</p>
 
 
     <img src="static/title.png" id="btn_speech"
@@ -225,16 +226,6 @@
 
         }
 
-
-
-        /*
-        var currentX = screen_width;
-        var currentY = screen_height;
-        const x = -(window.innerWidth / 2 - currentX) / diff_move;
-        const y = -(window.innerHeight / 2 - currentY) / diff_move;
-        eye1.style.transform = `translateY(${y}px) translateX(${x}px)`;
-        eye2.style.transform = `translateY(${y}px) translateX(${x}px)`;
-        */
 
 
         window.addEventListener('blur', (evt) => {
