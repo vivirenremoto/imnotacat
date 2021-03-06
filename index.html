@@ -103,7 +103,7 @@
     </style>
 
 
-    <p align="center">v1</p>
+    <p style="position:fixed;right:0;bottom:0">v2</p>
 
 
     <img src="static/title.png" id="btn_speech"
@@ -126,7 +126,6 @@
             <div class="eye-outer">
                 <div class="left-eye">
                     <svg viewBox="0 0 21 21">
-                        <circle class="eye eye-left" cx="16.5" cy="7.5" r="2.25"></circle>
                         <circle class="eye eye-left" cx="16.5" cy="8" r="2.25"></circle>
                         <path class="top" d="M2 10.5C2 10.5 6.43686 5.5 10.5 5.5C14.5631 5.5 19 10.5 19 10.5"></path>
                         <path class="bottom" d="M2 10.5C2 10.5 6.43686 15.5 10.5 15.5C14.5631 15.5 19 10.5 19 10.5">
@@ -228,12 +227,14 @@
 
 
 
+        /*
         var currentX = screen_width;
         var currentY = screen_height;
         const x = -(window.innerWidth / 2 - currentX) / diff_move;
         const y = -(window.innerHeight / 2 - currentY) / diff_move;
         eye1.style.transform = `translateY(${y}px) translateX(${x}px)`;
         eye2.style.transform = `translateY(${y}px) translateX(${x}px)`;
+        */
 
 
         window.addEventListener('blur', (evt) => {
