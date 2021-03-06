@@ -60,8 +60,7 @@
 
         BODY {
             touch-action: pan-x pan-y;
-            background: url('static/bg.png');
-            background-size: 100% auto;
+            background: #f5e9cb url('static/bg.png');
         }
 
 
@@ -99,7 +98,7 @@
 
         @media screen and (max-width: 480px) {
             .credits {
-                font-size: 23px;
+                font-size: 24px;
             }
         }
     </style>
@@ -194,9 +193,11 @@
         });
 
 
+        /*
         window.addEventListener('touchstart', (evt) => {
             moveEyes(evt);
         });
+        */
 
         window.addEventListener('touchmove', (evt) => {
             moveEyes(evt);
@@ -207,6 +208,8 @@
             var currentY;
 
             if (evt.originalEvent) {
+                alert('test');
+
                 currentX = evt.originalEvent.touches ? evt.originalEvent.touches[0].pageX : evt.pageX;
                 currentY = evt.originalEvent.touches ? evt.originalEvent.touches[0].pageY : evt.pageY;
             } else {
