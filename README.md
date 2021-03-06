@@ -2,6 +2,8 @@
  
 [Web](https://vivirenremoto.github.io/imnotacat/)
 
-[Autor](https://twitter.com/vivirenremoto)
+[Autora Dibujo](https://twitter.com/BeatrizRebolloM/status/1359832756230971394)
+
+[Autor Programación](https://twitter.com/vivirenremoto)
 
 ![Juego Dinorun](https://vivirenremoto.github.io/imnotacat/static/social.png)
