@@ -6,4 +6,4 @@
 
 [Autor Programación](https://twitter.com/vivirenremoto)
 
-![Juego Dinorun](https://vivirenremoto.github.io/imnotacat/static/social.png)
+![I'm not a cat by Beatriz Rebollo](https://vivirenremoto.github.io/imnotacat/static/social.png)
