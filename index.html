@@ -96,11 +96,6 @@
         }
 
 
-        #btn_speech:hover {
-            animation: shake 0.5s;
-            animation-iteration-count: infinite;
-        }
-
         @keyframes shake {
             0% {
                 transform: translate(1px, 1px) rotate(0deg);
@@ -159,6 +154,13 @@
                 animation-iteration-count: infinite;
             }
 
+        }
+
+        @media screen and (min-width: 480px) {
+            #btn_speech:hover {
+                animation: shake 0.5s;
+                animation-iteration-count: infinite;
+            }
         }
     </style>
 
