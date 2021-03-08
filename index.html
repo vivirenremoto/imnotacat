@@ -96,11 +96,6 @@
         }
 
 
-        #btn_speech:hover {
-            animation: shake 0.5s;
-
-            animation-iteration-count: infinite;
-        }
 
         @keyframes shake {
             0% {
@@ -153,6 +148,19 @@
         @media screen and (max-width: 480px) {
             .credits {
                 font-size: 24px;
+            }
+
+            #btn_speech {
+                animation: shake 0.5s;
+                animation-iteration-count: infinite;
+            }
+
+        }
+
+        @media screen and (min-width: 480px) {
+            #btn_speech:hover {
+                animation: shake 0.5s;
+                animation-iteration-count: infinite;
             }
         }
     </style>
